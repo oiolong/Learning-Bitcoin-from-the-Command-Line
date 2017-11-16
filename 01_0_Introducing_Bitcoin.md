@@ -143,16 +143,27 @@ A hash function is an algorithm frequently used with cryptograpy. It's a way to 
 Hash function 是經常與密碼學一起使用的算法. 這是將大量, 任意數量的數據映射到小的固定數據量的一種方法. 在密碼學中使用的 Hash Function 是單向的和碰撞抵抗的, 這意味著散列可以非常可靠地鏈接到原始數據, 但是原始數據不能從 Hash 重新生成. Hash 因此允許傳輸少量的數據來表示大量的數據，這對於效率和存儲要求可能是重要的.
 
 ### Public-Key Cryptography — In Short
+### 公鑰加密 - 簡介
 
 One way to think of public-key cryptography is: _a way for anyone to protect data such that only an authorized person can access it, and for that authorized person to prove that he will have that access._
 
+公鑰密碼的一種思路是: _任何人保護數據的方式, 只有被授權的人才能訪問數據, 並且被授權的人可以證明他有權訪問數據. _
+
 ## What Is Blockchain?
+## 什麼是區塊鏈?
 
 Blockchain is the generalization of the methodology used by Bitcoin to create a distributed global ledger. Bitcoin is a blockchain as are any number of alt-coins, each of which lives in its networks and writes to its own chain. Sidechains like Liquid are blockchains too. Blockchains don't even need to have anything to do with finances. For example, there have been many discussions of using blockchains to protect self-sovereign identities.
 
+區塊鍊是比特幣用來創建分佈式全球分類賬的通用化方法. 比特幣就像任何數量的 alt-coins , 一樣是一個區塊鏈，每個 alt-coin 都存在於它的網絡中, 並寫入自己的鏈中. 像Liquid這樣的副鏈也是區塊鏈. 區塊鏈甚至不需要與財務有任何關係. 例如, 有很多關於使用區塊鏈來保護自我主權身份的討論.
+
 ### Why Is It Called a Chain?
+### 為什麼被稱為鏈?
 
 Each block in the blockchain stores a hash of the block before it. This links the current block all the way back the original "genesis block" through an unbroken chain. It's a way to create absolute order among possibly conflicting data. This also provides the security of blockchain, because each block stacked atop an old one makes it harder to recreate the old block due to the proof-of-work algorithms used in block creation. Once several blocks have been built atop a block in the chain, it's essentially irreversible. 
+
+
+區塊鏈中的每個區塊都會先儲存 hash 在區塊之前. 這通過一個不間斷的鏈將當前區塊連接回原來的 "創建區塊 (genesis block)". 這是一種在可能存在衝突的數據中創建絕對順序的方法. 這也提供了區塊鏈的安全性, 因為在舊區塊上堆疊的每個區塊使得由於區塊創建中使用的證明工作算法而難以重新創建舊區塊. 一旦在連鎖店的一個街區之上建造了幾個街區, 這基本上是不可逆轉的.
+
 
 ### What is a Fork?
 
