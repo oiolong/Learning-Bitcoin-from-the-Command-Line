@@ -58,8 +58,7 @@ Bitcoin currency isn't physical coins. Instead it's an endless series of ownersh
 
 The vast majority of bitcoin transactions are sent to individual people (or at least to individual Bitcoin addresses). However, more complex methodologies can be used to send bitcoins to groups of people or to scripts. These various methodologies have names like P2PKH, multisig, and P2SH.
 
-絕大多數比特幣交易被發送給個人（或者至少個人比特幣地址. 但是, 可以使用更複雜的方法將比特幣發送給團體或腳本.
-這些不同的方法有 P2PKH , multisig 和P2SH .
+絕大多數比特幣交易被發送給個人（或者至少個人比特幣地址. 但是, 可以使用更複雜的方法將比特幣發送給團體或腳本.這些不同的方法有 P2PKH , multisig 和P2SH .
 
 
 ### How Are Transactions Stored?
@@ -67,8 +66,7 @@ The vast majority of bitcoin transactions are sent to individual people (or at l
 
 Transactions are combined into larger blocks of data, which are stored on the network. A block is built in such a way that it can not be replaced or rewritten once several blocks have been built after it. This is what makes bitcoins non-repudiable: the decentralized global ledger where everything is recorded is effectively a permanent and unchangeable database.
 
-交易被組合成更大的數據塊, 存儲在網絡上. 一個程序塊的構建方式是, 一旦在程序塊之後建立了幾個程序塊, 它就不能被替換或重寫. 這就是使得比特幣不可追溯
-的原因: 記錄一切的分散式全局分類賬實際上是一個永久的，不可改變的數據庫。
+交易被組合成更大的數據塊, 存儲在網絡上. 一個程序塊的構建方式是, 一旦在程序塊之後建立了幾個程序塊, 它就不能被替換或重寫. 這就是使得比特幣不可追溯的原因: 記錄一切的分散式全局分類賬實際上是一個永久的，不可改變的數據庫。
 
 
 However, the process of building these blocks is stochastic: it's somewhat random, and so you can never be assured that a transaction will be placed in a specific block. Moreso, there can be changes in blocks if they're very recent, but only if they're _very_ recent. So, things become non-repudiable (and permanent and unchangeable) after a little bit of time.
@@ -99,8 +97,12 @@ However, these Bitcoin scripts are the lowest level of Bitcoin functionality. Mu
 
 
 ### Bitcoin — In Short
+### 比特幣 - 簡介
 
 One way to think of Bitcoin is as: _a sequence of atomic transactions: each of which is enabled by the sender with the solution to a previous cryptographic puzzle that was stored as a script; each of which is locked for the recipient with a new cryptographic puzzle that is stored as a script; and each of which is recorded in an immutable global ledger._
+
+一種思考比特幣的方式是： _一系列原子交易: 發件人使用每一個原子交易來解決前一個加密難題的問題. 每一個被鎖定的收件人與一個新的密碼拼圖存儲為一個腳本; 並且每一個都記錄在一個不可變的全局分類帳中._
+
 
 ## What Is Public-Key Cryptography?
 
