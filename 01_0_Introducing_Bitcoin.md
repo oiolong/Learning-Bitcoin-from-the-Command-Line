@@ -105,24 +105,42 @@ One way to think of Bitcoin is as: _a sequence of atomic transactions: each of w
 
 
 ## What Is Public-Key Cryptography?
+## 什麼是公鑰加密?
 
 Public-key cryptography is a mathematical system for protecting data and proving ownership through an asymmetric pair of linked keys: the public key and the private key.
 
+公鑰加密是一種數學系統, 用於保護數據並通過不對稱的一對連接的鑰證明所有權: 公鑰和私鑰.
+
 ### What Is a Public Key?
+### 什麼是公鑰?
 
 A public key is the key given out to other people. In a typical public-key system, a user generates a public key and a private key, then he gives the public key to all and sundry. Those recipients can encrypt information with the public key, but it can't be decrypted with the same public key because of the asymmetry of the key pair.
 
+公鑰是給別人的鑰匙. 在典型的公鑰系統中, 用戶生成公鑰和私鑰, 然後將公鑰交給所有人. 這些收件人可以使用公鑰對信息進行加密, 但由於密鑰對的不對稱性, 無法使用相同的公鑰進行解密.
+
 ### What Is a Private Key?
+### 什麼是私鑰?
 
 A private key is linked to a public key in a key pair. In a typical public-key system, a user keeps his private key secure and uses it to decrypt messages sent to him, encrypted with the public key.
 
+私鑰在秘鑰對 ( key pair ) 裡面鏈接到公鑰對中的公鑰。在典型的公共密鑰系統中，使用者保持其私鑰的安全並使用它來解密發送給他的用公鑰加密的消息.
+
+
+
 ### What Is a Signature?
+### 什麼是簽名? 
 
 A message (or more commonly, a hash of a message) can be signed with a private key, creating a signature. Anyone with the corresponding public key can then validate the signature, which verifies that the signer owns the private key associated with the public key in question. 
 
+一個消息 (或更常見的, 一個消息的hash) 可以用私鑰簽名, 創建一個簽名. 任何和公鑰有相應的人都可以驗證簽名，這將驗證簽名者是否擁有與相關公鑰相關的私鑰
+
+
 ### What Is a Hash Function?
+### 什麼是 Hash Function?
 
 A hash function is an algorithm frequently used with cryptograpy. It's a way to map a large, arbitrary amount of data to a small, fixed amount of data. Hash functions used in cryptography are one-way and collision-resistant, meaning that a hash can very reliably be linked to the original data, but the original data can not be regenerated from the hash. Hashes thus allow the transmission of small amounts of data to represent large amounts of data, which can be important for efficiency and storage requirements. 
+
+Hash function 是經常與密碼學一起使用的算法. 這是將大量, 任意數量的數據映射到小的固定數據量的一種方法. 在密碼學中使用的 Hash Function 是單向的和碰撞抵抗的, 這意味著散列可以非常可靠地鏈接到原始數據, 但是原始數據不能從 Hash 重新生成. Hash 因此允許傳輸少量的數據來表示大量的數據，這對於效率和存儲要求可能是重要的.
 
 ### Public-Key Cryptography — In Short
 
